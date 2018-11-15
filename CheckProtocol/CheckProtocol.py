@@ -12,14 +12,14 @@ if __name__ == '__main__':
     url = "https://huodong.aliyuncs.com"
     #url = "http://www.baidu.com"
     # 获取版本信息 print(sys.version_info.major) # minor
-    info = sys.version_info
+    info = sys.version_info[0]
     # print(info.major)
     # 判断版本
-    if(2 == info.major):
+    if(2 == info):
         import CheckTwo
         code = CheckTwo.getHttpCode(url)
         CheckTwo.checkHttpCode(code)
-    elif(3 == info.major):
+    elif(3 == info):
         import CheckThree
         code = CheckThree.getHttpCode(url)
         CheckThree.checkHttpCode(code)
