@@ -12,5 +12,6 @@ python:
    - "3.7-dev"  # 3.7 development branch
   
 script:
-  - cd CheckProtocol & python CheckProtocol.py 
+  - cd CheckProtocol
+  - python CheckProtocol.py 
    
