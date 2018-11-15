@@ -9,9 +9,8 @@ from urllib import error
 def getHttpCode(urlpath):
     try:
 
-       # context = ssl._create_unverified_context()
         req = request.Request(urlpath)
-        response = request.urlopen(req) #, context=context)
+        response = request.urlopen(req) 
     except error.HTTPError as e:
         if(e.code == 400):
             return  400
