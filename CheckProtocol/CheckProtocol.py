@@ -5,13 +5,12 @@ import sys
 '''
 说明：
     返回 400  正常
-    返回 -1   为其他httpcode
-    返回 -2   url错误
+    返回 其他 抛出异常
     
 '''
 if __name__ == '__main__':
-    url = "https://huodong.aliyuncs.com"
-
+    # url = "https://huodong.aliyuncs.com"
+    url = "http://www.baidu.com"
     # 获取版本信息 print(sys.version_info.major) # minor
     info = sys.version_info
     # print(info.major)

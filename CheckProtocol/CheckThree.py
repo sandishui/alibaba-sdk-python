@@ -15,9 +15,10 @@ def getHttpCode(urlpath):
     except error.HTTPError as e:
         if(e.code == 400):
             return  400
-        return -1
+        raise RuntimeError('HTTPError')
     except error.URLError:
-        return -2
+        raise RuntimeError('URLError')
+    raise RuntimeError('HTTPError')
 
 def checkHttpCode(code):
     if(code == 400):
