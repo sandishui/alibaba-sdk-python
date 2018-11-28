@@ -9,8 +9,8 @@ import sys
     
 '''
 if __name__ == '__main__':
-    url = "https://huodong.aliyuncs.com"
-    #url = "http://www.baidu.com"
+    #url = "https://huodong.aliyuncs.com"
+    url = "https://httpstest.aliyuncs.com"
     # 获取版本信息 print(sys.version_info.major) # minor
     info = sys.version_info[0]
     # print(info.major)
